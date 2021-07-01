@@ -1,0 +1,11 @@
+<button class="btn btn-lg btn-outline-primary" (click)="open()">
+  Launch confirmation modal
+</button>
+
+<confirmation-modal #confirmationModal
+(newConfirmationEvent)="getConfirmationValue($event)"
+[modalStyle]="modalStyle"
+[modalTitle]="modalTitle"
+[modalBody]="modalBody">
+
+</confirmation-modal>
